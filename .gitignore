@@ -26,6 +26,10 @@ models/champion/
 .DS_Store
 Thumbs.db
 
+# Archives
+*.zip
+*.tar.gz
+
 # Logs
 *.log
 logs/
