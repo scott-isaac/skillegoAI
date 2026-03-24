@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skillego</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>    <div id="game-container">
+        <h1>Skillego</h1>
+        <div id="turn-indicator">Player 1's Turn</div>
+        <div id="board"></div>
+        <div id="controls">
+            <button id="reset-button">Reset Game</button>
+            <button id="ai-button">Enable AI (Player 2)</button>
+            <select id="ai-type-select">
+                <option value="heuristic">AI: Heuristic</option>
+                <option value="ml">AI: ML Model</option>
+                <option value="random">AI: Random</option>
+            </select>
+        </div>    
+        <div id="debug-log">
+            <h3>Debug Log</h3>
+            <div id="debug-content"></div>
+        </div>
+        <div id="winner-message" style="display:none;"></div>
+    </div>
+
+    
+    <!-- Load scripts in the correct order (no modules) -->
+    <script src="js/no-modules/utils.js"></script>
+    <script src="js/no-modules/constants.js"></script>
+    <script src="js/no-modules/state.js"></script>    
+    <script src="js/no-modules/board.js"></script>    
+    <script src="js/no-modules/renderers.js"></script>
+    <script src="js/no-modules/game.js"></script>
+    <script src="js/no-modules/api.js"></script>
+    <script src="js/no-modules/main.js"></script>
+</body>
+</html>
